@@ -12,11 +12,7 @@ This is a React Native project for **Filmu**, a movie streaming app, integrated 
 
 ## Prerequisites
 
-Before getting started, e![Screenshot 2024-12-08 001107](https://github.com/user-attachments/assets/238bf074-adf8-498e-9849-4b370a44f7f5)
-![Screenshot 2024-12-07 235645](https://github.com/user-attachments/assets/09c52c91-cb45-4f7d-b658-9268552a8342)
-![Screenshot 2024-12-07 235542](https://github.com/user-attachments/assets/9bd21575-670b-48d9-885e-2517385c785f)
-![Screenshot 2024-12-07 224137](https://github.com/user-attachments/assets/373eb4ba-353c-40ce-8b0b-f6f6484697dc)
-![Screenshot 2025-01-02 102705](https://github.com/user-attachments/assets/3dbdde1b-e408-4c29-9a0f-ac7d8b6e2aef)
+
 ![Screenshot 2025-01-02 102651](https://github.com/user-attachments/assets/10f6fd93-2053-42b0-b4fc-e5c943e08d93)
 ![Screenshot 2025-01-02 102638](https://github.com/user-attachments/assets/4990d4d0-fd32-480e-811d-e8889f4c2a94)
 ![Screenshot 2025-01-02 102627](https://github.com/user-attachments/assets/97ac96e9-e60a-42f2-8118-b76449b7d312)
