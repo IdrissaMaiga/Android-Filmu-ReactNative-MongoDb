@@ -1,0 +1,133 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  AGENT
+  USER
+}
+
+
+enum Type_ {
+  SERIE
+  MOVIE
+  LIVE
+}
+
+
+model User {
+  id                   String          @id @default(auto()) @map("_id") @db.ObjectId
+  name                 String?
+  email                String          @unique
+  role                 Role            @default(USER)
+  phone                String?
+  ipTvPassword         String?
+  ipTvUsername         String?
+  profilePicture       String?
+  password             String
+  subscribtionEndDay   DateTime?
+  subscribtionStartDay DateTime?
+  isbanned             Boolean         @default(false)
+  creationdate         DateTime        @default(now())
+  updatedAt   DateTime @updatedAt
+  token         String?
+  isLogined           Boolean  @default(false)
+  isactive            Boolean  @default(true)
+  devices              Int             @default(0)
+  devicesInfo          Device[]
+  
+}
+model Device {
+  id           String    @id @default(auto()) @map("_id") @db.ObjectId
+  userId       String    @db.ObjectId
+  user         User      @relation(fields: [userId], references: [id])
+  token        String  @unique
+  deviceType   String?
+  os           String?
+  ipAddress    String?                                                                                                                                                
+  loginTime DateTime  @default(now())
+  isActive     Boolean   @default(false)
+  isFlagged    Boolean   @default(false)
+}
+
+
+
+
+model Agent{
+  id           String    @id @default(auto()) @map("_id") @db.ObjectId
+  email        String?
+  address      String?
+  facebook     String?
+  telegram     String?
+  phone        String?
+  whatsapp     String?
+}
+
+
+
+model Series {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  creationdate  DateTime @default(now())
+  name          String
+  type_         Type_    @default(SERIE)
+  seenby        Int      @default(0) // number of users who have seen the service
+  imagePath     String @unique
+  tmdb          String @unique
+  serieId       String[]
+  rating        Float?
+  genres        String[]
+  published     DateTime @default(now())
+}
+
+              
+model Movie {
+  id            String      @id @default(auto()) @map("_id") @db.ObjectId
+  creationdate  DateTime    @default(now())
+  name          String
+  indexer       String []    
+  imagePath     String @unique
+  isAdult       Boolean @default(false)     
+  extension     String []
+  tmdb          String @unique
+  added         DateTime?
+  genres        String []
+  rating        Float ?@default(1)
+  type_         Type_       @default(MOVIE)
+  seenby        Int         @default(0) // number of users who have seen the service
+}
+
+
+
+//Channel
+
+model Channel {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  creationdate DateTime @default(now())
+  name         String
+  logos        String[]
+  ports        port[]   @relation("ChannelPorts") // Adding a relation name to avoid ambiguity
+  total        Int?     // New field for 'total'
+  category     String?  // New field for 'category'
+}
+
+model port {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  region       String?
+  name         String
+  resolution   String?
+  utc          String?
+  indexer      String
+  language     String?
+  ok  Boolean
+  creationdate DateTime @default(now())
+  channelId    String?  @db.ObjectId
+  Channel      Channel? @relation(fields: [channelId], references: [id], name: "ChannelPorts") // Added relation name
+}
+
+

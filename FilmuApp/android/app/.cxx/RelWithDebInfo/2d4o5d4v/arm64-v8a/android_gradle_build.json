@@ -1,0 +1,111 @@
+{
+  "buildFiles": [
+    "D:\\Projects\\AndroidFilmu\\FilmuApp\\node_modules\\@react-native-async-storage\\async-storage\\android\\build\\generated\\source\\codegen\\jni\\CMakeLists.txt",
+    "D:\\Projects\\AndroidFilmu\\FilmuApp\\node_modules\\@react-native-community\\blur\\android\\build\\generated\\source\\codegen\\jni\\CMakeLists.txt",
+    "D:\\Projects\\AndroidFilmu\\FilmuApp\\node_modules\\@react-native-community\\slider\\android\\src\\main\\jni\\CMakeLists.txt",
+    "D:\\Projects\\AndroidFilmu\\FilmuApp\\node_modules\\react-native-gesture-handler\\android\\build\\generated\\source\\codegen\\jni\\CMakeLists.txt",
+    "D:\\Projects\\AndroidFilmu\\FilmuApp\\node_modules\\react-native-reanimated\\android\\build\\generated\\source\\codegen\\jni\\CMakeLists.txt",
+    "D:\\Projects\\AndroidFilmu\\FilmuApp\\node_modules\\react-native-safe-area-context\\android\\src\\main\\jni\\CMakeLists.txt",
+    "D:\\Projects\\AndroidFilmu\\FilmuApp\\node_modules\\react-native-screens\\android\\src\\main\\jni\\CMakeLists.txt",
+    "D:\\Projects\\AndroidFilmu\\FilmuApp\\node_modules\\react-native-vector-icons\\android\\build\\generated\\source\\codegen\\jni\\CMakeLists.txt",
+    "D:\\Projects\\AndroidFilmu\\FilmuApp\\node_modules\\react-native\\ReactAndroid\\cmake-utils\\default-app-setup\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "D:\\Projects\\AndroidFilmu\\FilmuApp\\android\\app\\.cxx\\RelWithDebInfo\\2d4o5d4v\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "D:\\Projects\\AndroidFilmu\\FilmuApp\\android\\app\\.cxx\\RelWithDebInfo\\2d4o5d4v\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "appmodules::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "appmodules",
+      "output": "D:\\Projects\\AndroidFilmu\\FilmuApp\\android\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\2d4o5d4v\\obj\\arm64-v8a\\libappmodules.so",
+      "runtimeFiles": [
+        "D:\\Projects\\AndroidFilmu\\FilmuApp\\android\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\2d4o5d4v\\obj\\arm64-v8a\\libreact_codegen_RNCSlider.so",
+        "D:\\Projects\\AndroidFilmu\\FilmuApp\\android\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\2d4o5d4v\\obj\\arm64-v8a\\libreact_codegen_safeareacontext.so",
+        "D:\\Projects\\AndroidFilmu\\FilmuApp\\android\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\2d4o5d4v\\obj\\arm64-v8a\\libreact_codegen_rnscreens.so",
+        "C:\\Users\\user\\.gradle\\caches\\8.10.2\\transforms\\0b396a6571faea36ef3e81439b17aeab\\transformed\\jetified-fbjni-0.6.0\\prefab\\modules\\fbjni\\libs\\android.arm64-v8a\\libfbjni.so",
+        "C:\\Users\\user\\.gradle\\caches\\8.10.2\\transforms\\4a528d03c4d6d1503003a8b065791677\\transformed\\jetified-react-android-0.76.5-release\\prefab\\modules\\jsi\\libs\\android.arm64-v8a\\libjsi.so",
+        "C:\\Users\\user\\.gradle\\caches\\8.10.2\\transforms\\4a528d03c4d6d1503003a8b065791677\\transformed\\jetified-react-android-0.76.5-release\\prefab\\modules\\reactnative\\libs\\android.arm64-v8a\\libreactnative.so"
+      ]
+    },
+    "react_codegen_RNCSlider::@4898bc4726ecf1751b6a": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "react_codegen_RNCSlider",
+      "output": "D:\\Projects\\AndroidFilmu\\FilmuApp\\android\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\2d4o5d4v\\obj\\arm64-v8a\\libreact_codegen_RNCSlider.so",
+      "runtimeFiles": [
+        "C:\\Users\\user\\.gradle\\caches\\8.10.2\\transforms\\0b396a6571faea36ef3e81439b17aeab\\transformed\\jetified-fbjni-0.6.0\\prefab\\modules\\fbjni\\libs\\android.arm64-v8a\\libfbjni.so",
+        "C:\\Users\\user\\.gradle\\caches\\8.10.2\\transforms\\4a528d03c4d6d1503003a8b065791677\\transformed\\jetified-react-android-0.76.5-release\\prefab\\modules\\jsi\\libs\\android.arm64-v8a\\libjsi.so",
+        "C:\\Users\\user\\.gradle\\caches\\8.10.2\\transforms\\4a528d03c4d6d1503003a8b065791677\\transformed\\jetified-react-android-0.76.5-release\\prefab\\modules\\reactnative\\libs\\android.arm64-v8a\\libreactnative.so"
+      ]
+    },
+    "react_codegen_RNVectorIconsSpec::@479809fae146501fd34d": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "react_codegen_RNVectorIconsSpec"
+    },
+    "react_codegen_rnasyncstorage::@1596841e19ec5b9eeffe": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "react_codegen_rnasyncstorage"
+    },
+    "react_codegen_rnblurview::@9a34ffec6e39b5c9049e": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "react_codegen_rnblurview"
+    },
+    "react_codegen_rngesturehandler_codegen::@39f233abcd2c728bc6ec": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "react_codegen_rngesturehandler_codegen"
+    },
+    "react_codegen_rnreanimated::@8afabad14bfffa3f8b9a": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "react_codegen_rnreanimated"
+    },
+    "react_codegen_rnscreens::@25bcbd507e98d3a854ad": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "react_codegen_rnscreens",
+      "output": "D:\\Projects\\AndroidFilmu\\FilmuApp\\android\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\2d4o5d4v\\obj\\arm64-v8a\\libreact_codegen_rnscreens.so",
+      "runtimeFiles": [
+        "C:\\Users\\user\\.gradle\\caches\\8.10.2\\transforms\\4a528d03c4d6d1503003a8b065791677\\transformed\\jetified-react-android-0.76.5-release\\prefab\\modules\\reactnative\\libs\\android.arm64-v8a\\libreactnative.so",
+        "C:\\Users\\user\\.gradle\\caches\\8.10.2\\transforms\\4a528d03c4d6d1503003a8b065791677\\transformed\\jetified-react-android-0.76.5-release\\prefab\\modules\\jsi\\libs\\android.arm64-v8a\\libjsi.so",
+        "C:\\Users\\user\\.gradle\\caches\\8.10.2\\transforms\\0b396a6571faea36ef3e81439b17aeab\\transformed\\jetified-fbjni-0.6.0\\prefab\\modules\\fbjni\\libs\\android.arm64-v8a\\libfbjni.so"
+      ]
+    },
+    "react_codegen_safeareacontext::@7984cd80db47aa7b952a": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "react_codegen_safeareacontext",
+      "output": "D:\\Projects\\AndroidFilmu\\FilmuApp\\android\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\2d4o5d4v\\obj\\arm64-v8a\\libreact_codegen_safeareacontext.so",
+      "runtimeFiles": [
+        "C:\\Users\\user\\.gradle\\caches\\8.10.2\\transforms\\0b396a6571faea36ef3e81439b17aeab\\transformed\\jetified-fbjni-0.6.0\\prefab\\modules\\fbjni\\libs\\android.arm64-v8a\\libfbjni.so",
+        "C:\\Users\\user\\.gradle\\caches\\8.10.2\\transforms\\4a528d03c4d6d1503003a8b065791677\\transformed\\jetified-react-android-0.76.5-release\\prefab\\modules\\jsi\\libs\\android.arm64-v8a\\libjsi.so",
+        "C:\\Users\\user\\.gradle\\caches\\8.10.2\\transforms\\4a528d03c4d6d1503003a8b065791677\\transformed\\jetified-react-android-0.76.5-release\\prefab\\modules\\reactnative\\libs\\android.arm64-v8a\\libreactnative.so"
+      ]
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\ndk\\26.1.10909125\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\ndk\\26.1.10909125\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}
